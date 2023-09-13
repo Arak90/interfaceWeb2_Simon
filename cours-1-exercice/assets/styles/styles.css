@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 8vw;
+}
+
+main {
+    margin-top: 50px;
+}
+
+div + div {
+    margin-top: 25px;
+}
+
+h1 {
+    margin: 0;
+}
+
+span {
+    font-size: 2em;
+}
+
+.compteur {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.compteur > div {
+    margin-left: 25px;
+}
+
+/* Styles des états de l'élément "nombre" à définir */
+.nombre {
+    display: inline-block;
+    transition: transform 0.6s, opacity 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+    position: absolute;
+}
+
+.nombre-entrer {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.nombre-sortir {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.compteur {
+    position: relative;
+    overflow: hidden;
+    height: 2em; /* Vous pouvez ajuster cette hauteur si nécessaire */
+    margin-bottom: 1em; /* Ajout d'une marge pour l'espacement */
+}
